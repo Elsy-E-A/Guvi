@@ -1,0 +1,105 @@
+{
+  "basics": {
+    "name": "Elsy E A",
+    "label": "",
+    "picture": "",
+    "email": "elsy.asha@gmail.com",
+    "phone": "7092979961",
+    "degree": "B.E. Computer Science Engineering",
+    "website": "",
+    "summary": "",
+    "location": {
+      "address": "coonoor",
+      "postalCode": "643102",
+      "city": "coonoor",
+      "countryCode": "india ",
+      "region": "Tamil Nadu"
+    },
+    "profiles": [
+      {
+        "network": "www.linkedin.com/in/elsy-e-a-a002a678 ",
+        "username": "Elsy E A",
+        "url": "www.linkedin.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Tamil Nadu e Goernance Agency",
+      "position": "e District Manager",
+      "website": "tnega,gov.in",
+      "startDate": "2016-01-01",
+      "endDate": "",
+      "summary": "Technical support for all state government digitalisation projects",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Your volunteer organization name",
+      "position": "Your job title",
+      "website": "The URL for the employer's website",
+      "startDate": "Your start date, in YYYY-MM-DD format",
+      "endDate": "Your end date, in YYY-MM-DD format (leave blank for a current position)",
+      "summary": "A one-sentence to one-paragraph summary of this employer or position",
+      "highlights": [
+        "Bullet-point list items that you would like to include along with (or instead of) a summary paragraph."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Anna university",
+      "area": "Computer Science",
+      "studyType": "Regular",
+      "startDate": "2010-09-30",
+      "endDate": "2014-05-19",
+      "gpa": "81.5",
+      "courses": [
+        ""
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Good Performance",
+      "date": "2022-08-15",
+      "awarder": "District Collector,The Nilgiris",
+      "summary": "Sucessfull implementation of eoffice in distirct"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Your publication title",
+      "publisher": "Publisher name",
+      "releaseDate": "Publication date, in YYYY-MM-DD format",
+      "website": "The website URL for this publisher or book",
+      "summary": "A one-sentence to one-paragraph overview of this publication"      
+    }
+  ],
+  "skills": [
+    {
+      "name": "php",
+      "level": "basic",
+      "keywords": [
+        "php,sql,html"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "tamil,english,malaylam,hindi",
+      "fluency": "read and speak"
+    }
+  ],
+  "interests": [
+    {
+      "name": "listening music",
+      "keywords": [
+        "spb"
+      ]
+    }
+  ]
+}
