@@ -1,0 +1,43 @@
+var num=[1,2,3,4]
+
+
+//Anonymous function
+let odd=function(num){
+    var index=0
+    let ano=[]
+    for(let i=0;i<num.length;i++)
+    {
+        if(num[i]%2!=0)
+        {ano[index]=num[i]
+        index++
+    }}
+    console.log(ano)
+}
+odd(num)
+
+//Arrow Function
+let arr=(num)=>{
+var index=0
+var arrv=[]
+    for(let i=0;i<num.length;i++)
+    {
+        if(num[i]%2!=0)
+        {arrv[index]=num[i]
+        index++
+    }}
+    console.log(arrv)
+}
+//IIFE function
+(function() {
+   
+    let iif=[]
+    var index=0
+  for(let i=0;i<num.length;i++)
+    {
+        if(num[i]%2!=0)
+        {iif[index]=num[i]
+        index++
+    }}
+    console.log(iif)
+})();
+arr(num)
