@@ -29,4 +29,4 @@ let arr=(str)=>{
       }
    console.log(nstr.join(" "));
 })();
-arr(num)
+arr(str)
