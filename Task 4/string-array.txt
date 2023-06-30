@@ -1,0 +1,32 @@
+var str="Have a nice day"
+      
+
+//Anonymous function
+let cstr=function(str){
+    var nstr = str.toLowerCase().split(" ")
+    for(var i = 0; i< nstr.length; i++){
+         nstr[i] = nstr[i][0].toUpperCase() + nstr[i].slice(1);
+      }
+   console.log(nstr.join(" "));
+}
+cstr(str)
+
+//Arrow Function
+let arr=(str)=>{
+    var nstr = str.toLowerCase().split(" ")
+    for(var i = 0; i< nstr.length; i++){
+         nstr[i] = nstr[i][0].toUpperCase() + nstr[i].slice(1);
+      }
+   console.log(nstr.join(" "));
+
+}
+//IIFE function
+(function() {
+   
+    var nstr = str.toLowerCase().split(" ")
+    for(var i = 0; i< nstr.length; i++){
+         nstr[i] = nstr[i][0].toUpperCase() + nstr[i].slice(1);
+      }
+   console.log(nstr.join(" "));
+})();
+arr(num)
