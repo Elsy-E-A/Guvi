@@ -1,0 +1,50 @@
+var str=["malayalam","sky","jungle","wow"]
+
+//Anonymous function
+let palindrome=function(str){
+   var pal=[]
+ let index=0
+for(let i=0;i<str.length;i++)
+{
+ 
+  if(str[i]==str[i].split('').reverse().join(''))
+  {
+    pal[index]=str[i]
+  index++}  
+  }
+  return pal
+}
+console.log(palindrome(str))
+
+//Arrow Function
+let arr=(str)=>{
+    var pal=[]
+ let index=0
+for(let i=0;i<str.length;i++)
+{
+ 
+  if(str[i]==str[i].split('').reverse().join(''))
+  {
+    pal[index]=str[i]
+  index++}  
+  }
+  return pal
+
+}
+//IIFE function
+(function() {
+   
+    var palin=[]
+ let index=0
+for(let i=0;i<str.length;i++)
+{
+ 
+  if(str[i]==str[i].split('').reverse().join(''))
+  {
+    palin[index]=str[i]
+  index++}  
+  }
+  return console.log(palin)
+})();
+
+console.log(arr(str))
