@@ -1,0 +1,35 @@
+var num=[1,2,3,4,5,6]
+      
+
+//Anonymous function
+let add=function(num){
+    var sum=0
+for(let i=0;i<num.length;i++)
+{
+  sum=sum+num[i]
+  }
+  console.log(sum)
+}
+add(num)
+
+//Arrow Function
+let arr=(num)=>{
+    var sum=0
+for(let i=0;i<num.length;i++)
+{
+  sum=sum+num[i]
+  }
+  console.log(sum)
+
+}
+//IIFE function
+(function() {
+   
+    var sum=0
+for(let i=0;i<num.length;i++)
+{
+  sum=sum+num[i]
+  }
+  console.log(sum)
+})();
+arr(num)
