@@ -1,0 +1,48 @@
+var num=[2,4,5,5,7,7,4,5,3,2,1]
+let snum=num.sort()
+
+//Anonymous function
+let dup=function(snum)
+{
+    let unum=[]
+for(let i=0;i<snum.length;i++)
+{
+      if(num[i]!==num[i+1] && num[i]!==num[i-1])
+    {unum.push(num[i])
+    }
+    else if(num[i]!==num[i-1])
+    unum.push(num[i])
+  }
+  console.log(unum)
+}
+
+dup(snum)
+
+//Arrow Function
+let arr=(snum)=>{
+let unum=[]
+for(let i=0;i<snum.length;i++)
+{
+      if(num[i]!==num[i+1] && num[i]!==num[i-1])
+    {unum.push(num[i])
+    }
+    else if(num[i]!==num[i-1])
+    unum.push(num[i])
+  }
+  console.log(unum)
+}
+
+//IIFE function
+(function() {
+   let unum=[]
+for(let i=0;i<snum.length;i++)
+{
+      if(num[i]!==num[i+1] && num[i]!==num[i-1])
+    {unum.push(num[i])
+    }
+    else if(num[i]!==num[i-1])
+    unum.push(num[i])
+  }
+  console.log(unum)
+})();
+arr(snum)

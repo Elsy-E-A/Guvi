@@ -1,0 +1,43 @@
+var num1=[1,4,5]
+let len=num1.length
+var num2=[2,6,9]    
+
+//Anonymous function
+let medi=function(num1,num2)
+{
+    var nsort=[]
+for(let i=0;i<num1.length;i++)
+nsort[i]=num1[i]
+for(let j=0;j<num2.length;j++)
+nsort.push(num2[j])
+nsort.sort()
+let med=(nsort[len-1]+nsort[len])/2
+return console.log(med)
+}
+medi(num1,num2)
+
+//Arrow Function
+let arr=(num1,num2)=>{
+    ar nsort=[]
+    for(let i=0;i<num1.length;i++)
+nsort[i]=num1[i]
+for(let i=0;i<num2.length;i++)
+nsort.push(num2[i])
+nsort.sort()
+let med=(nsort[len-1]+nsort[len])/2
+return console.log(med)
+
+}
+//IIFE function
+(function() {
+   var nsort=[]
+    for(let i=0;i<num1.length;i++)
+nsort[i]=num1[i]
+for(let i=0;i<num2.length;i++)
+nsort.push(num2[i])
+nsort.sort()
+let med=(nsort[len-1]+nsort[len])/2
+return console.log(med)
+})();
+arr(num1,num2)
+
