@@ -1,0 +1,21 @@
+var arr=[1,2,3,4,5]
+let k=3
+let len=arr.length
+
+//Anonymous function
+let rot=function(arr){
+let temp=arr.splice(len-k,len-1)
+let start=arr.splice(0,len-k)
+console.log(temp.concat(start))
+}
+rot(arr)
+
+//IIFE function
+(function() {
+    var arr=[1,2,3,4,5]
+let k=3
+let len=arr.length
+  let temp=arr.splice(len-k,len-1)
+let start=arr.splice(0,len-k)
+console.log(temp.concat(start))
+})();
