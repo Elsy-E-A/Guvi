@@ -1,0 +1,53 @@
+let number=[1,2,3,11,5,6,13,10]
+let isPrime = true;
+let prime=[]
+let index=0
+let j=0
+
+//Anonymous function
+let pnum=function(number){
+for(let i=0;i<number.length;i++)
+{
+// check if number is equal to 1
+if (number[j] === 1) {
+    
+    
+}
+
+// check if number is greater than 1
+else if (number[j] > 1) {
+
+    // looping through 2 to number-1
+    for (let i = 2; i < number[j]; i++) {
+        if (number[j] % i == 0) {
+            isPrime = false;
+              break;
+        }
+        else
+        isPrime=true;
+    }
+
+    if (isPrime) {
+        prime[index]=number[j]
+        index++
+    } 
+}
+
+// check if number is less than 1
+else {
+    console.log("There is no prime number");
+}j++
+
+}return console.log(prime)
+}
+pnum(number)
+
+//IIFE function
+(function() {
+    var arr=[1,2,3,4,5]
+let k=3
+let len=arr.length
+  let temp=arr.splice(len-k,len-1)
+let start=arr.splice(0,len-k)
+console.log(temp.concat(start))
+})();
