@@ -1,0 +1,16 @@
+ var obj= [{
+               "vehicle": "car",
+               "name":"Maruthi",
+               "model": 2010
+            },{
+               "vehicle": "bike",
+               "name":"KTM DUKE",
+               "model": 2007
+            }
+         ];
+         
+         for(let x of obj) {
+            
+               console.log(x);
+            
+         }

@@ -1,14 +1,10 @@
 {
   "basics": {
     "name": "Elsy E A",
-    "label": "",
-    "picture": "",
-    "email": "elsy.asha@gmail.com",
+       "email": "elsy.asha@gmail.com",
     "phone": "7092979961",
     "degree": "B.E. Computer Science Engineering",
-    "website": "",
-    "summary": "",
-    "location": {
+       "location": {
       "address": "coonoor",
       "postalCode": "643102",
       "city": "coonoor",
@@ -32,23 +28,11 @@
       "endDate": "",
       "summary": "Technical support for all state government digitalisation projects",
       "highlights": [
-        ""
+        "edistrict,eoffice,cmhelpline,tree cutting and landsale permission,building permission"
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Your volunteer organization name",
-      "position": "Your job title",
-      "website": "The URL for the employer's website",
-      "startDate": "Your start date, in YYYY-MM-DD format",
-      "endDate": "Your end date, in YYY-MM-DD format (leave blank for a current position)",
-      "summary": "A one-sentence to one-paragraph summary of this employer or position",
-      "highlights": [
-        "Bullet-point list items that you would like to include along with (or instead of) a summary paragraph."
-      ]
-    }
-  ],
+  
   "education": [
     {
       "institution": "Anna university",
@@ -58,7 +42,7 @@
       "endDate": "2014-05-19",
       "gpa": "81.5",
       "courses": [
-        ""
+        "Nil"
       ]
     }
   ],
@@ -70,15 +54,7 @@
       "summary": "Sucessfull implementation of eoffice in distirct"
     }
   ],
-  "publications": [
-    {
-      "name": "Your publication title",
-      "publisher": "Publisher name",
-      "releaseDate": "Publication date, in YYYY-MM-DD format",
-      "website": "The website URL for this publisher or book",
-      "summary": "A one-sentence to one-paragraph overview of this publication"      
-    }
-  ],
+ 
   "skills": [
     {
       "name": "php",
