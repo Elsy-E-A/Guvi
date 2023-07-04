@@ -1,0 +1,21 @@
+let jobj1='{"name":"person1","age":5}'
+let jobj2='{"age":5,"name":"person2"}'
+function comp(jobj1,jobj2)
+{
+let obj1=JSON.parse(jobj1)
+let obj2=JSON.parse(jobj2)
+if(Object.keys(obj1).length != Object.keys(obj2).length)
+{
+    return false
+}
+
+for(let key in obj1)
+{
+    if(!obj2.hasOwnProperty(key)|| obj1[key]!=obj2[key])
+{
+    return false
+}
+else
+return true
+}}
+console.log(comp(jobj1,jobj2))
