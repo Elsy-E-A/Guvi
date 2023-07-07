@@ -1,0 +1,7 @@
+class person{
+    construuctor
+    {
+        console.log("welcome to my personal blog")
+    }
+    
+}

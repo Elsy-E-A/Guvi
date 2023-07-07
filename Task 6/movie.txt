@@ -1,0 +1,28 @@
+class Movie{
+    
+constructor(title, studio, rating)
+{
+    this.title=title
+    this.studio=studio
+    this.rating=rating
+    if(this.rating=="")
+    {
+        this.rating="PG"
+    }
+    
+}
+getPG(arr)
+{
+  this.arr=arr
+Object.keys(this.arr)forEach(key=>{if(this.rating=="")
+{
+   return this.title
+}})}
+}
+
+let film = new Movie(title, studio, rating);
+let arr=[{title:"Jurassic Park", studio:"Universal Pictures", rating:""},
+{title:"Jurassic Park", studio:"Universal Pictures", rating:""},
+{title:"Jurassic Park", studio:"Universal Pictures", rating:""}
+{title:"Jurassic Park", studio:"Universal Pictures", rating:""}]
+getPG(arr)
