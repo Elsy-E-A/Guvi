@@ -1,7 +1,35 @@
-class person{
-    construuctor
+class Person{
+    constructor(name)
     {
-        console.log("welcome to my personal blog")
+        
+        console.log(`welcome to ${name} blog`)
     }
-    
+bio(name,age,des)
+{
+console.log(`Name:${name}
+Age:${age}
+Description:${des}`)
+}    
+edu(deg,cour,year,cgpa)
+{
+console.log(`Degree:${deg}
+course:${cour}
+Passed Out:${year}
+CGPA:${cgpa}`)
+}    
+exp(cmp,ex,year,high)
+{
+console.log(`Company name:${cmp}
+Experience:${ex}
+DOJ:${year}
+Job Description:${high}`)
+}    
+int(like)
+{
+console.log(`Interest:${like})}    
 }
+let obj=new Person("Elsy")
+obj.bio("Elsy",30,"Love to Live")
+obj.edu("BE","CSE",2014,8.15)
+obj.exp("TNeGA",2016,8,"Technical support to various govt project")
+obj.int("hearing songs,learning")
