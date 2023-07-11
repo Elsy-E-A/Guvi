@@ -1,24 +1,31 @@
-class uber{
-    construuctor
+class Uber{
+    constructor()
     {
         console.log(`welcome to uber
          Enjoy your ride
          have a nice day`)
     }
-    get car()
+     car(dist)
     {
-
+let rate=30
+return rate*dist
     }
-    get deluxe()
+    deluxe(dist)
     {
-
+let rate=50
+return rate*dist
     }
-    get auto()
+    auto(dist)
     {
-
+let rate=10
+return rate*dist
     }
 }
 let obj=new Uber()
-let arr=[{vehicle:"car",distance:"100",waiting:""}
-{vehicle:"auto",distance:"100",waiting:""}
-{vehicle:"deluxe",distance:"100",waiting:""}]
+
+console.log(obj.car(100))
+
+console.log(obj.deluxe(30))
+
+console.log(obj.auto(50))
+

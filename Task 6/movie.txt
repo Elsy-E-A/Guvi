@@ -1,28 +1,30 @@
-class Movie{
-    
-constructor(title, studio, rating)
-{
-    this.title=title
-    this.studio=studio
-    this.rating=rating
-    if(this.rating=="")
+class Movie {
+  constructor(title, studio, rating){
+    this.title = title;
+    this.studio = studio;
+    if(rating === "")
     {
-        this.rating="PG"
+      this.rating = "PG";
     }
-    
-}
-getPG(arr)
-{
-  this.arr=arr
-Object.keys(this.arr)forEach(key=>{if(this.rating=="")
-{
-   return this.title
-}})}
+    else {
+      this.rating = rating;
+    }
+    console.log(`Movie Name: ${this.title},Studio:${this.studio},Rating:${this.rating}`)
+  }
+  
+  getPG(arr) {
+    console.log(`Movies with rating PG is as follows`)
+    let pgarr=arr.filter(arr => arr.rating === "")
+return pgarr.forEach(arr=> console.log(arr.title));
+  }
 }
 
-let film = new Movie(title, studio, rating);
-let arr=[{title:"Jurassic Park", studio:"Universal Pictures", rating:""},
-{title:"Jurassic Park", studio:"Universal Pictures", rating:""},
-{title:"Jurassic Park", studio:"Universal Pictures", rating:""}
-{title:"Jurassic Park", studio:"Universal Pictures", rating:""}]
-getPG(arr)
+let film = new Movie("Casino Royale", "Eon Productions", "PG13");
+let rate = new Movie("James Bond", "Eon Productions", "");
+
+let arr=[{"title":"Jurassic Park", "studio":"Universal Pictures","rating":"PG20"},
+{"title":"Harry Porter", "studio":"Warner Bros", "rating":""},
+{"title":"Apoorva Sagodharargal", "studio":"Raaj Kamal Production", "rating":""},
+{"title":"Peter Pan", "studio":"Universal Pictures", "rating":""}]
+
+film.getPG(arr)
