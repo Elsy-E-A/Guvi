@@ -3,21 +3,36 @@ class Circle {
     this.radius = radius;
     this.color = color;
   }
-  getRadius(){
+  get Radius(){
     return this.radius;
     };
-  setRadius(value){
+  set Radius(value){
     this.radius = value;
     };
-  getColor();
-  setColor();
+  get Color(){
+    return this.color};
+    
+  set Color(ncolor){
+    this.color=ncolor};
   
-  getArea(){
-    return Math.PI * this.radius * this.radius;
+  get Area(){
+    return Math.round(Math.PI * this.radius * this.radius).toFixed(2);
     };
-  getCircumference(){
-    return 2 * Math.PI * this.radius;
+  get Circumference(){
+    return (2 * Math.PI * this.radius).toFixed(2);
     };
 }
 
-let cir = new Circle(1.0, "red");
+let cir = new Circle("1.0", "red");
+console.log(`Before changing radius and color:
+Radius: ${cir.Radius}
+Color: ${cir.Color}
+Area is: ${cir.Area}
+Cirumference is: ${cir.Circumference}`)
+cir.radius="5.1"
+cir.color="blue"
+console.log(`After changing radius and color: 
+Radius: ${cir.Radius}
+Color: ${cir.Color}
+Area is: ${cir.Area}
+Cirumference is: ${cir.Circumference}`)
