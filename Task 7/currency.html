@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>XMLHTTP-REQUEST-FLAG</title>
+</head>
+<body>
+<script>
+var xhr=new XMLHttpRequest()
+xhr.open('GET','https://restcountries.com/v3.1/all',true)
+
+xhr.setRequestHeader('content_Type','application/json')
+
+xhr.onload=function(){
+    if(xhr.status===200)
+    {
+        var response=JSON.parse(xhr.responseText)
+        
+        let farr= response.filter(function (el) {
+            if(el.currencies=='USD')
+            console.log(el.name.official)
+}
+);
+}
+
+
+    else
+    {
+        console.log("Request failed",xhr.status)
+    }
+}
+xhr.send()
+</script>
+</body>
+</html>
