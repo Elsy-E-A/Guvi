@@ -13,11 +13,19 @@ xhr.onload=function(){
     if(xhr.status===200)
     {
         var response=JSON.parse(xhr.responseText)
-        Object.keys(response).forEach(key => {
- return console.log(response.flag);
-    }
-    )    
-    }
+       for (var i = 0; i < response.length; i++) {
+           
+            if (response[i].currencies != undefined) {
+              Object.keys(response[i].currencies).forEach((key) => {
+                
+                  console.log(response[i].name.official,"-",response[i].capital,"-",response[i].flag);
+                
+              });
+            }
+          }
+           
+         }
+    
 
 
     else

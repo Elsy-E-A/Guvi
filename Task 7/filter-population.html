@@ -14,11 +14,12 @@ xhr.onload=function(){
     {
         var response=JSON.parse(xhr.responseText)
         
-        let farr= response.filter(function (el) {
+        let pp=response.filter( function(el) { 
             if(el.population<200000)
-            console.log(el.name.official)
-}
-);
+            return el.name.official}
+            )
+             
+console.log(pp)
 }
     else
     {

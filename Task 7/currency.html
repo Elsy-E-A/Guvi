@@ -13,12 +13,16 @@ xhr.onload=function(){
     if(xhr.status===200)
     {
         var response=JSON.parse(xhr.responseText)
-        
-        let farr= response.filter(function (el) {
-            if(el.currencies=='USD')
-            console.log(el.name.official)
-}
-);
+        for (var i = 0; i < response.length; i++) {
+           
+            if (response[i].currencies != undefined) {
+              Object.keys(response[i].currencies).forEach((key) => {
+                if (key === "USD") {
+                  console.log(response[i].name.official,"-",response[i].currencies.USD.name);
+                }
+              });
+            }
+          }
 }
 
 
