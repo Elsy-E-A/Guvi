@@ -21,6 +21,11 @@
   grid-template-columns: auto auto;
   
 }
+.control-label:after {
+  content:"*";
+  color:red;
+  
+}
 .checked {
   color: orange;
 }
@@ -49,7 +54,7 @@
         <form id="form1">
         
             <div>
-                <label ><h5>Name</h5></label>
+                <label class="control-label">Name</label>
                 <div class="full">
                     <input class="form-control" type="text" id="fname" style="width: 500px;"required/></input>
                         <input class="form-control" type="text" id="lname"style="width: 500px;" required/></input>
@@ -61,13 +66,13 @@
                 </div>
             </div><br><br>  
             <div >
-                <label for="exampleFormControlInput1" class="form-label"><h5>Email</h5></label>
+                <label for="exampleFormControlInput1" class="class="control-label">Email</label>
               <div class="col" >
                     <input type="email" class="form-control" id="email-id" style="width: 1150px;">
                 </div>
             </div><br><br>
           
-                <div > <label><h5>Your Experience</h5></label>
+                <div > <label class="control-label">Your Experience</label>
                 </div><div>
                     <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
@@ -75,10 +80,10 @@
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
                 </div>
-                <div > <label><h10>Overall how would you rate your Experience with us?</h10></label>
+                <div > <label ><h10>Overall how would you rate your Experience with us?</h10></label>
                 </div>
             <br><br>  
-            <div> <label><h5>How satisfied are you with</h5></label>
+            <div> <label class="control-label">How satisfied are you with</label>
             </div>
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item"><label></label></li>
@@ -113,7 +118,7 @@
                                                     <li class="list-group-item"style="background-color: lightgrey;"> <input  type="radio" name="com-radio" id="com-id" value="Very Satisfied"></li>
                            </ul>
            <br>
-           <div> <label><h5>How Likely are you to </h5></label>
+           <div> <label class="control-label">How Likely are you to </label>
            </div>
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item"><label></label></li>
@@ -148,7 +153,7 @@
                                                     <li class="list-group-item"style="background-color: lightgrey;"> <input  type="radio" name="com" id="comp-id" value="Very Likely"></li>
                             </ul>
                             <div>
-                <div class="container"><label><h5>Additional Comments or Suggestions</h5></label>
+                <div class="container"><label>Additional Comments or Suggestions</label>
                 <div >
                     <textarea id="Message" name="Message"  rows="6" cols="145"  required></textarea>
                 </div></div>
