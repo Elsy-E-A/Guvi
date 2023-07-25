@@ -2,7 +2,7 @@ const ele=document.createElement("div")
 ele.setAttribute("id","div_id")
 ele.setAttribute("class","container")
 
-ele.innerHTML=`<div class="container" style="color:silver">Let the countdown begin</div>`;
+ele.innerHTML=`<div class="start">Let the countdown begin</div>`;
 document.body.append(ele)
 
 setTimeout(function () {
@@ -48,4 +48,4 @@ setTimeout(function () {
 }, 1400);
 }, 1600);
 }, 1800);
-}, 2000);
+}, 5000);
