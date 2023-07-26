@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title id="title"><h1>Title</h1></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div id="div-1" class="container">
+        <form id="form">
+        
+            <div>
+                <label class="control-label">Name</label>
+                <div class="full">
+                    <input class="form-group" type="text" placeholder="Enter First Name" id="first-name" style="width: 500px;"required/></input>
+                        <input class="form-group" placeholder="Enter Last Name" type="text" id="last-name"style="width: 500px;" required/></input>
+                </div>
+            </div>
+            <div >
+                <div class="full"> <label for="fname" ><h10>First Name</h10></label>
+                    <label for="lname" ><h10>Last Name</h10></label>
+                </div>
+            </div><br><br>  
+                  
+            <div >
+              <label class="control-label">Address</label>
+              <textarea class="form-group" id="address" placeholder="Enter Address" name="address" style="width: 1000px;" required></textarea>
+          </div><br><br>
+          <div>
+            <label class="control-label">Pincode</label>
+            <div class="full">
+                <input class="form-control" type="text" id="pincode"placeholder="Enter Pincode" style="width: 500px;"required/></input>
+                    </div>
+        </div><br><br>
+        <div>
+          <label class="control-label">Gender</label>
+          <div class="full">
+            <ul class="list-group list-group-horizontal"><li class="list-group-item">  <input  type="radio" name="gender" id="gender" value="Male">Male</li>
+            <li class="list-group-item">  <input  type="radio" name="gender" id="gender" value=" Female">Female</li>
+            <li class="list-group-item">  <input  type="radio" name="gender" id="gender" value=" Others">Others</li> </ul></div>
+      </div>   <br><br>  
+      <div>
+        <label class="control-label">Choice of food</label>
+        <div class="full">
+          <ul class="list-group list-group-horizontal"><li class="list-group-item">  <input  type="checkbox" name="food" id="biryani" value="Biryani">Biryani</li>
+          <li class="list-group-item">  <input  type="checkbox" name="food" id="CurdRice" value=" CurdRice">CurdRice</li>
+          <li class="list-group-item">  <input  type="checkbox" name="food" id="Parotta" value=" Parotta">Parotta</li>
+          <li class="list-group-item">  <input  type="checkbox" name="food" id="Dosai" value=" Dosai">Dosai</li>
+          <li class="list-group-item">  <input  type="checkbox" name="food" id="Shawarma" value=" Shawarma">Shawarma</li> </ul></div>
+    </div>           <br><br> 
+    <div>
+      <label class="control-label">State</label>
+      <div class="full">
+        <input class="form-control" type="text" id="state" placeholder="Enter State Name" style="width: 500px;"required/></input>
+          </div>
+       </div><br><br>
+          <div>
+        <label class="control-label">Country</label>
+        <div class="full">
+          <input class="form-control" type="text" id="country" placeholder="Enter Country Name"style="width: 500px;"required/></input>
+                  
+          </div></div><br><br>
+            <div>
+                <input type="submit" id="submit" class="btn-primary" value="Submit" ></input>
+            </div> <br><br>
+        </form>
+        <table id="dataTable" class="table">
+          <thead>
+            <tr>
+              
+              </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <script src="script.js"></script>
+      <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+         </div>
+</body>
+</html>
