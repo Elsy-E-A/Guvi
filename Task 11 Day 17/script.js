@@ -10,7 +10,7 @@ fetch(apiUrl)
   })
   .then((val) => {
     console.log(val);
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 10; i++) {
 
       obj.innerHTML=`<div class="card">
       <div class="card-header"><p class="card-text">${val[i].name.common}</p></div>
