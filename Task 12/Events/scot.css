@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: yellow;
+}
+.table{
+   text-transform: capitalize;
+    text-align: center;
+  border: 10px solid black;
+   color: black;
+    padding: 1px solid black;
+    box-shadow: 20px;
+    margin: 1px solid black;
+}
+th{
+    background-color: grey;
+}
+td{
+    border: 1px solid black;
+   
+}
