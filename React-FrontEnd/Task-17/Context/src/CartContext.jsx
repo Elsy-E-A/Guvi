@@ -3,6 +3,7 @@ import { createContext } from "react";
 const CartContext=createContext();
 
 function CartProvider({children}){
+    
     const data =[
         {
             "id": 1,
