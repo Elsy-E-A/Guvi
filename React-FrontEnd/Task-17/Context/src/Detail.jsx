@@ -14,16 +14,18 @@ function Detail() {
 console.log(price);
 
     const add = (event,id) => {
-     
+      setCount(count=>count+1);
       setStatus({...status,[event.target.id]:status[event.target.id]+1});
       setPrice({...price,[event.target.id]:price[event.target.id]+initial[event.target.id]});
-     
+      setTprice(tprice=>tprice+initial[event.target.id]);
       
     }
     const minus = (event,key) => {
-      if(status[event.target.id]>1){
+      if(status[event.target.id]>1 && count>0){
+        setCount(count=>count-1);
       setStatus({...status,[event.target.id]:status[event.target.id]-1});
       setPrice({...price,[event.target.id]:price[event.target.id]-initial[event.target.id]});
+      setTprice(tprice=>tprice-initial[event.target.id]);
       }
       else
       {
@@ -33,36 +35,53 @@ console.log(price);
       }
      }
      const addCart=(event,id)=>{
-setCount(count=>count+status[event.target.id]);
+setCount(count=>count+1);
 let tqty=status[event.target.id]*initial[event.target.id]
+setTprice(tprice=>tprice+initial[event.target.id]);
 
-setTprice(tprice=>tprice+tqty);
-let dataID=event.target.id;
-let index=parseInt(dataID)+1;
-// console.log(event.target.id);
-// let names=data.filter((value)=>{
-//   if(value.id==index)
-//   {
-    
-// return value;
-//   }
-// })
-// setDcart(current=>[...current,names]);
-// console.log(dcart);
+     }
+     const remCart=(event,id)=>{
+      if(status[event.target.id]>1 && count>0){
+      setCount(count=>count-1);
+      setStatus({...status,[event.target.id]:status[event.target.id]-1});
+      setPrice({...price,[event.target.id]:price[event.target.id]-initial[event.target.id]});
+     
+      let tqty=status[event.target.id]*initial[event.target.id]
+
+      setTprice(tprice=>tprice-initial[event.target.id]);
+      }
+      else
+      {
+       alert('Product is no more in cart')
+       set
+      }
      }
 
      const cart=()=>{
       console.log(count);
       if(count<1)
       {
-        alert('please add the product to cart');
+        return(
+       
+          <div className="text-center">
+          <h5  className="card-text">Your Cart is empty</h5>
+           <br></br>
+          Please add product to cart
+       
+      </div>
+     )
       }
       else
       {
         return(
-alert(`The selected Product Quantity and Price is as follows,
-Total Quantity : ${count} 
-Total Amount : ${tprice}`))
+          <div className="text-center">
+          <h5  className="card-text">The selected Product Quantity and Price is as follows,</h5><b>
+          Total Quantity : {count}</b>
+           <br></br>
+           Total Amount : {tprice}<br></br>
+   
+      </div>
+        )
       }
      }
     const fdata= data.map((value,index) => 
@@ -100,8 +119,9 @@ Total Amount : ${tprice}`))
 SHIPPING : FREE <br></br>
  TOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {price[index]}</h6>  </div>
 <br></br>
+  
     <br></br> </h6>
-    <button className='btn btn-primary' id={index}  onClick={(event,id)=>addCart(event,id)}>Add to Cart</button>
+    <button className='btn btn-primary' id={index}  onClick={(event,id)=>remCart(event,id)}>Remove from Cart</button>
     </div> </div>
       </div></div></div></div>
    
@@ -137,6 +157,12 @@ SHIPPING : FREE <br></br>
                   
                 </div>
             </div></nav>
+             <footer className="py-5 bg-light">
+          <div className='cardItem'>
+            <div></div>
+         {visible=='false'?cart():alert('hi')}
+          </div>
+          </footer>
             <section className="py-5">
                 
           <div className='col'>  {fdata};
@@ -144,8 +170,7 @@ SHIPPING : FREE <br></br>
           </div>
           <div></div>
         </section>
-        <footer className="py-5 bg-dark">
-          </footer>
+       
   
     </div>
     

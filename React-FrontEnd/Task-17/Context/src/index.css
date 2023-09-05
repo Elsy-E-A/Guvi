@@ -10838,3 +10838,6 @@ display: flexbox;
 body{
   background-color: #523e02;
 }
+footer{
+position: sticky;
+}
