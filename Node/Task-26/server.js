@@ -90,7 +90,7 @@ app.get("/mentor/:mentorId/students", async (req, res) => {
   }
 });
 
-app.get("/student/:studentId", async (req, res) => {
+app.get("/student/:studentId/mentors", async (req, res) => {
   try {
     const student = await Student.findById(req.params.studentId).populate(
       "cMentor"
