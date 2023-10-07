@@ -10,8 +10,9 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const PORT = 4000;
+const PORT = process.env.PORT;
 
+// const DB_URL = "mongodb://0.0.0.0:27017/admin";
 const DB_URL = process.env.DB_URL;
 
 //Connect to MongoDB
