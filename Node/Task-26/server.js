@@ -90,6 +90,19 @@ app.get("/mentor/:mentorId/students", async (req, res) => {
   }
 });
 
+app.get("/student/:studentId", async (req, res) => {
+  try {
+    const student = await Student.findById(req.params.studentId).populate(
+      "cMentor"
+    );
+
+     res.send(student);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+});
+
+
 app.listen(PORT, () => {
   console.log("Server is running on PORT", PORT);
 });
